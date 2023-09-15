@@ -72,3 +72,24 @@ body{
     background-color: rgb(243, 62, 38);
 }
 
+/*  BOX   */
+.img-container{
+    position: relative;
+    width: 50%;
+    }
+
+
+.botao-box:hover {
+    background-color: black;
+  }
+
+
+.botao-box {
+    position: absolute;
+    top: 50%;
+    background-color: grey;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+}
