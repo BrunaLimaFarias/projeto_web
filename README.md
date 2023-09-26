@@ -1,2 +1,3 @@
 # web_aula
-Atividades da aula de Programação Web
+
+Projeto da aula de Programação Web
