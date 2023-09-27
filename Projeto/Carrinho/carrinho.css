@@ -1,0 +1,84 @@
+/* Reset de estilos básicos */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 50px; /* Tamanho da logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+.adicionar_carrinho {
+    background-color: #3498db; /* Cor do botão "Adicionar ao Carrinho" */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.adicionar_carrinho:hover {
+    background-color: #2980b9; /* Cor do botão "Adicionar ao Carrinho" no hover */
+}
+
+/* Estilo para o botão "Finalizar Compra" */
+.finalizar-compra {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.finalizar-compra a {
+    text-decoration: none;
+}
+
+.finalizar-compra button {
+    background-color: #3498db; /* Cor do botão "Finalizar Compra" */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.finalizar-compra button:hover {
+    background-color: #2980b9; /* Cor do botão "Finalizar Compra" no hover */
+}
+
