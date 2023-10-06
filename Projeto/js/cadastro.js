@@ -24,9 +24,9 @@ function cadastrar() {
         body: dados
     });
 
-    window.location.href = "../Login/login.html";
+    window.location.href = "../paginas/login.html";
 }
 
 function redirecionar() {
-  window.location.href = "../Login/login.html";
+  window.location.href = "../paginas/login.html";
 }
