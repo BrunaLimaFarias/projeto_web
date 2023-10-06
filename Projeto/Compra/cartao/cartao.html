@@ -1,0 +1,55 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="compra.css">
+    <title>Página de Compra - Nome da Loja</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo da Empresa">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Página Inicial</a></li>
+                <li><a href="../Produtos/produtos.html">Produtos</a></li>
+                <li><a href="../Carrinho/carrinho.html">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cartao_de_credito">
+            
+            <h2>Informações de pagamento:</h2>
+
+            <div class="numero_cartao">
+                <label for="numero_cartao">Número do Cartão:</label>
+                <input type="text" id="numero_cartao" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+                <div class="logos_cartao">
+                    <img src="visa-logo.png" alt="Visa Logo">
+                    <img src="mastercard-logo.png" alt="Mastercard Logo">
+                </div>
+            </div>
+
+            <div class="validade_cartao">
+                <label for="validade_cartao">Data de Validade:</label>
+                <input type="text" id="validade_cartao" maxlength="7" placeholder="MM/AAAA">
+            </div>
+
+            <div class="cvc_cartao">
+                <label for="cvc_cartao">Código de Segurança:</label>
+                <input type="text" id="cvc_cartao" maxlength="3" placeholder="CVC">
+            </div>
+
+            <div class="nome_cartao">
+                <label for="nome_cartao">Nome no Cartão (Opcional):</label>
+                <input type="text" id="nome_cartao" placeholder="Nome do Titular">
+            </div>
+
+            <button class="finalizar_compra">Finalizar Compra</button>
+
+        </div>
+    </main>
+</body>
+</html>
