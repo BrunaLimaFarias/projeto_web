@@ -44,6 +44,23 @@ main {
     padding: 20px;
 }
 
+.logo, .titulo, .links {
+    width: 19%; /* Ajuste a largura conforme necessário */
+}
+
+/* Estilos para cada uma das divs */
+.logo {
+    text-align: left;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.links {
+    text-align: left;
+}
+
 .adicionar_carrinho {
     background-color: #3498db; /* Cor do botão "Adicionar ao Carrinho" */
     color: #fff;
@@ -81,4 +98,3 @@ main {
 .finalizar-compra button:hover {
     background-color: #2980b9; /* Cor do botão "Finalizar Compra" no hover */
 }
-

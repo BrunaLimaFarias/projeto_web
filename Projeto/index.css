@@ -45,7 +45,7 @@ body, h1, p, a {
   
   /* Estilo para os links de navegação */
   a[href$=".html"]::before {
-    content: "\25B6 "; /* Adiciona um ícone de seta à direita dos links */
+    content: "\25CF  "; /* Adiciona um ícone de seta à direita dos links */
   }
   
   /* Estilo para o cabeçalho da página */
