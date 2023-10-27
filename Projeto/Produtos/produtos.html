@@ -1,14 +1,15 @@
-<html lang="en">
+<html lang="pt">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="produtos.js"></script>
         <link rel="stylesheet" href="produtos.css">
         <title>Página de Produtos</title>
     </head>
     <body>
         <header>
             <div class="header-left">
-                <img src="logo.png" alt="LogoMarca">
+                <img src="../Img/logo_pet.png" alt="LogoMarca">
                 <input type="text" placeholder="Pesquisar">
                 <button>Buscar</button>
             </div>
@@ -24,12 +25,7 @@
         </header>
         <main>
             <section class="section_cards">
-                <div class="card_produto">
-                    <img src="../Img/racao_cachorro.png" alt="Produto 1">
-                    <h3>Nome do Produto 1</h3>
-                    <p>R$ 99,99</p>
-                    <button>Adicionar ao Carrinho</button>
-                </div>
+                <div id="produtos"></div>
             </section>
         </main>
     </body>
