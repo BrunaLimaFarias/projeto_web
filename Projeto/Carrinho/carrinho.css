@@ -7,6 +7,7 @@ body, h1, h2, p, ul, li {
 /* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
 }
 
 header {
@@ -42,10 +43,6 @@ nav ul li a {
 
 main {
     padding: 20px;
-}
-
-.logo, .titulo, .links {
-    width: 19%; /* Ajuste a largura conforme necessário */
 }
 
 /* Estilos para cada uma das divs */

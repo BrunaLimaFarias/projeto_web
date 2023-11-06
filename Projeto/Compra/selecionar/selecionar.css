@@ -8,7 +8,7 @@ body {
     height: 100vh;
 }
 
-.cadastro {
+.selecionar {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -17,8 +17,8 @@ body {
     text-align: center;
 }
 
-.cadastro h2 {
-    margin-bottom: 20px;
+.selecionar h2 {
+    margin-bottom: 50px;
     color: #333;
 }
 
@@ -39,31 +39,17 @@ body {
     border-radius: 5px;
 }
 
-.btn {
-    background-color: #333;
+.selecionar button {
+    background-color: #3498db; /* Cor do botão "Finalizar Compra" */
     color: #fff;
+    border: none;
+    border-radius: 5px;
     padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-.btn:hover {
-    background-color: #555;
+.selecionar button:hover {
+    background-color: #2980b9; /* Cor do botão "Finalizar Compra" no hover */
 }
 
-/* Estilo para o botão "Voltar" */
-.back-button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.back-button:hover {
-    background-color: #555;
-}

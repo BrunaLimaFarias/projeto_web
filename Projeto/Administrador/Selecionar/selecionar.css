@@ -8,7 +8,7 @@ body {
     height: 100vh;
 }
 
-.login {
+.selecionar {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -17,54 +17,70 @@ body {
     text-align: center;
 }
 
-.login h2 {
-    margin-bottom: 20px;
+.selecionar h2 {
+    margin-bottom: 50px;
     color: #333;
 }
 
-.input {
+.input1 {
     margin-bottom: 15px;
 }
 
-.input label {
+.input1 label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-.input input {
+.input1 input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.btn {
-    margin-top: 20%;
-    background-color: #333;
+.input1 button {
+    background-color: #26A666; /* Cor do botão "Adicionar Item" */
     color: #fff;
+    border: none;
+    border-radius: 5px;
     padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-.btn:hover {
-    background-color: #555;
+.input1 button:hover {
+    background-color: #14B866; /* Cor do botão "Adicionar Item" no hover */
 }
 
-/* Estilo para o botão "Voltar" */
-.back-button {
-    background-color: #333;
+.input2 {
+    margin-bottom: 15px;
+}
+
+.input2 label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input2 input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input2 button {
+    background-color: #a82223; /* Cor do botão "Adicionar Item" */
     color: #fff;
-    padding: 10px 15px;
     border: none;
     border-radius: 5px;
+    padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-.back-button:hover {
-    background-color: #555;
+.input2 button:hover {
+    background-color: #ab2e46; /* Cor do botão "Adicionar Item" no hover */
 }
+

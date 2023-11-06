@@ -1,5 +1,3 @@
-// teste
-
 var conteudo = [
     {id: 1, img: "<img src=../Img/biscoito_be_nature.png>",titulo: "Be Nature Maracuja", preco: "9.99"},
     {id: 2, img: "<img src=../Img/biscoito_dog_biscuits.png>",titulo: "Biscoito Dog Biscuits", preco: "9.99"},
