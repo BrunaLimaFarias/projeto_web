@@ -11,37 +11,39 @@ var conteudo = [
 ];
 */
 
-for(var i = 0; i < dados.length; i++) {
+window.onload = async function() {
 
-    var template =
-    `<div class="card_produto">
-            <div class="img_produto" >
-                ${dados[i].img }
-            </div>
-            <div class="nome_produto">
-                <h3>${dados[i].titulo}</h3>
-            </div>
-            <div class="preco_produto">
-                <p>${dados[i].preco}</p>
-            </div>
-            <div class="adicionar_carrinho" onclick=(${dados[i].id})">
-            <button>Adicionar ao Carrinho</button>
-            </div>
-        </div>`;
-
-        document.getElementById('produtos').innerHTML += template;
-}
-
-async function listar(){
-    var retorno = await fetch("Produtos/listar.php", {
+    var promise = await fetch("Produtos/teste.php", {
         method: "GET"
+
     });
 
-    var dados = await retorno.json();
-    
-    alert(dados[1].nome);
+    var dados = await promise.json();
 
+    for(var i = 0; i < dados.length; i++) {
+
+        var template =
+        `<div class="card_produto">
+                <div class="img_produto" >
+                    ${dados[i].img }
+                </div>
+                <div class="nome_produto">
+                    <h3>${dados[i].titulo}</h3>
+                </div>
+                <div class="preco_produto">
+                    <p>${dados[i].preco}</p>
+                </div>
+                <div class="adicionar_carrinho" onclick=(${dados[i].id})">
+                <button>Adicionar ao Carrinho</button>
+                </div>
+            </div>`;
+
+            document.getElementById('produtos').innerHTML += template;
+    }
 }
+
+
+
 
 function comprar(id){
 
@@ -54,3 +56,4 @@ function comprar(id){
     });
 
 }
+

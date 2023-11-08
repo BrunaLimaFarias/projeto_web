@@ -1,11 +1,9 @@
 <?php
-    $titulo = $_POST["titulo"];
-    $preco = $_POST["preco"];
-    $img = $_POST["img"];
+    $quantidade = $_POST["quantidade"];
 
     $con = mysqli_connect("localhost:3306", "root", "root", "projeto_web");
 
-    $query = "INSERT INTO produto (titulo, preco, img) VALUES ('$titulo','$preco','$img')";
+    $query = "INSERT INTO carrinho (quantidade) VALUES ('$quantidade')";
     
 
     mysqli_query($con, $query);

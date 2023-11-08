@@ -2,9 +2,7 @@
 
 $con = mysqli_connect("localhost:3306", "root", "root", "projeto_web");
 
-$query = "SELECT * FROM produtos";
-
-$resultado = mysqli_query($con,$query);
+$resultado = mysqli_query($con, "SELECT * FROM produtos");
 
 $dados = array();
 
