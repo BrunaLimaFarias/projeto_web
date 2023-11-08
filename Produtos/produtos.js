@@ -1,3 +1,4 @@
+/*
 var conteudo = [
     {id: 1, img: "<img src=../Img/biscoito_be_nature.png>",titulo: "Be Nature Maracuja", preco: "9.99"},
     {id: 2, img: "<img src=../Img/biscoito_dog_biscuits.png>",titulo: "Biscoito Dog Biscuits", preco: "9.99"},
@@ -8,26 +9,38 @@ var conteudo = [
     {id: 7, img: "<img src=../Img/sache_filhote.png>",titulo: "Sache Filhote", preco: "9.99"},
     {id: 8, img: "<img src=../Img/petisco_dental.png>",titulo: "Petisco Dental", preco: "9.99"}
 ];
+*/
 
-for(var i = 0; i < conteudo.length; i++) {
+for(var i = 0; i < dados.length; i++) {
 
     var template =
     `<div class="card_produto">
             <div class="img_produto" >
-                ${conteudo[i].img } 
+                ${dados[i].img }
             </div>
             <div class="nome_produto">
-                <h3>${conteudo[i].titulo}</h3>
+                <h3>${dados[i].titulo}</h3>
             </div>
             <div class="preco_produto">
-                <p>${conteudo[i].preco}</p>
+                <p>${dados[i].preco}</p>
             </div>
-            <div class="adicionar_carrinho" onclick=(${conteudo[i].id})">
+            <div class="adicionar_carrinho" onclick=(${dados[i].id})">
             <button>Adicionar ao Carrinho</button>
             </div>
         </div>`;
 
         document.getElementById('produtos').innerHTML += template;
+}
+
+async function listar(){
+    var retorno = await fetch("Produtos/listar.php", {
+        method: "GET"
+    });
+
+    var dados = await retorno.json();
+    
+    alert(dados[1].nome);
+
 }
 
 function comprar(id){

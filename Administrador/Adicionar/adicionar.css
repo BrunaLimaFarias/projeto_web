@@ -78,6 +78,31 @@ main {
     border-radius: 5px;
     cursor: pointer;
 }
+.escolhe-arquivos label {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*o botao defalt do input file não aparece*/
+input[type="file"] {
+    display: none;
+}
+
+.grupo-botoes input {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 .grupo-botoes button:hover {
     background-color: #555;
@@ -104,12 +129,12 @@ main {
     border-color: #333;
 }
 
-.enviar {
+.adicionar {
     text-align: center;
     margin-top: 20px;
 }
 
-.enviar button {
+.adicionar button {
     padding: 10px 20px;
     background-color: #333;
     color: #fff;
@@ -118,7 +143,7 @@ main {
     cursor: pointer;
 }
 
-.enviar button:hover {
+.adicionar button:hover {
     background-color: #555;
 }
 

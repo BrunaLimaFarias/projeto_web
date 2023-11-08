@@ -2,6 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="adicionar.css">
+        <script defer src="adicionar.js"></script>
         <title>Página de Compra - Nome da Loja</title>
     </head>
     <body>
@@ -23,8 +24,10 @@
                 <h2>Adicionar produto:</h2>
 
                 <div class="grupo-botoes">
-                    <button>Carregar Imagem</button>
-                    <button>Escolher</button>
+                    <div class="escolhe-arquivos">
+                        <label for="arquivo">Escolher</label>
+                        <input type="file" id="arquivo">
+                    </div>
                 </div>
 
                 <div class="grupo-inputs">
@@ -32,8 +35,8 @@
                     <input type="number" name="preco" class="preco" placeholder="Preço do produto">
                 </div>
 
-                <div class="enviar">
-                    <button>Lançar</button>
+                <div class="adicionar">
+                    <button type="button" onclick="gravar()" class="button">Adicionar</button>
                 </div>
 
             </div>
