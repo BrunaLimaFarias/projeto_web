@@ -22,8 +22,7 @@ CREATE TABLE carrinho (
 	FOREIGN KEY (id_produto) REFERENCES produtos(id)
 );
 
-INSERT INTO carrinho(id_produto, quantidade) VALUES
-	(1, 1);
+
 
 INSERT INTO produtos(titulo, preco, img) VALUES
 	('Be Nature Maracuja', 99.99,  '../Img/biscoito_be_nature.png'),
@@ -36,7 +35,8 @@ INSERT INTO produtos(titulo, preco, img) VALUES
 INSERT INTO adm(email, senha) VALUES
 	('bruna@gmail','123');
     
-
+INSERT INTO carrinho(id_produto, quantidade) VALUES
+	(1, 1);
 /*
 SELECT p.titulo, p.preco, p.img, p.quantidade
 FROM produtos p
