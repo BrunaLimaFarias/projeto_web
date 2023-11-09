@@ -72,6 +72,41 @@ main {
     background-color: #2980b9; /* Cor do botão "Adicionar ao Carrinho" no hover */
 }
 
+
+/**/
+
+#produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card_produto {
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.img_produto img{
+    object-fit: contain;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.nome_produto {
+    margin: 10px 0;
+}
+
+.preco_produto {
+    font-weight: bold;
+}
+/**/
+
 /* Estilo para o botão "Finalizar Compra" */
 .finalizar-compra {
     text-align: center;

@@ -1,3 +1,10 @@
+<?php
+require_once("get_carrinho.php");
+$produtos = get_carrinho();
+// print_r($produtos); // para debug
+
+?>
+
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
@@ -28,8 +35,22 @@
             <!-- Conteúdo da página continua aqui -->
         </main>
         <footer>
-            <div class="lista-produtos">
-                <div id="produtos"></div>
+            <div class="lista-carrinho">
+                <div id="produtos">
+                <? foreach ($produtos as $produto) : ?>
+                    <div class="card_produto">
+                        <div class="img_produto">
+                            <img src="<?= $produto['img'] ?>" alt="<?= $produto['titulo'] ?>">
+                        </div>
+                        <div class="nome_produto">
+                            <h3> <?= $produto['titulo'] ?></h3>
+                        </div>
+                        <div class="preco_produto">
+                            <p> <?= $produto['preco'] ?> </p>
+                        </div>
+                    </div>
+                <? endforeach; ?>
+                </div>
             </div>
             <div class="finalizar-compra">
                 <a href="../Compra/selecionar/selecionar.html">
