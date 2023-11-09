@@ -10,7 +10,7 @@ var conteudo = [
     {id: 8, img: "<img src=../Img/petisco_dental.png>",titulo: "Petisco Dental", preco: "9.99"}
 ];
 */
-
+/*
 window.onload = async function() {
 
     var produtos = await promise.json();
@@ -36,7 +36,7 @@ window.onload = async function() {
             document.getElementById('produtos').innerHTML += template;
     }
 }
-
+*/
 
 
 async function comprar(id) {

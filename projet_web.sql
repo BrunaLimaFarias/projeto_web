@@ -1,6 +1,5 @@
 DROP DATABASE IF EXISTS projeto_web;
 CREATE DATABASE projeto_web;
-SET NAMES utf8;
 USE projeto_web;
 
 CREATE TABLE produtos (
@@ -18,10 +17,13 @@ CREATE TABLE adm (
 
 CREATE TABLE carrinho (
 	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-        id_produto INT NOT NULL,
-        quantidade INT NOT NULL,
-        FOREIGN KEY (id_produto) REFERENCES produtos(id)
+	id_produto INT NOT NULL,
+	quantidade INT NOT NULL,
+	FOREIGN KEY (id_produto) REFERENCES produtos(id)
 );
+
+INSERT INTO carrinho(id_produto, quantidade) VALUES
+	(1, 1);
 
 INSERT INTO produtos(titulo, preco, img) VALUES
 	('Be Nature Maracuja', 99.99,  '../Img/biscoito_be_nature.png'),
@@ -34,8 +36,7 @@ INSERT INTO produtos(titulo, preco, img) VALUES
 INSERT INTO adm(email, senha) VALUES
 	('bruna@gmail','123');
     
-INSERT INTO carrinho(id_produto, quantidade) VALUES
-	(1, 1);
+
 /*
 SELECT p.titulo, p.preco, p.img, p.quantidade
 FROM produtos p
