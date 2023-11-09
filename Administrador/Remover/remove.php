@@ -8,6 +8,6 @@
     mysqli_query($conn, $query_carrinho);    
     
     $query = "DELETE FROM produtos WHERE id = '$id'";   
-    mysqli_query($conn, $query);    
+    mysqli_query($conn, $query); 
 ?>
 

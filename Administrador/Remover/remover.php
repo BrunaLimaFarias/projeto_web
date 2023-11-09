@@ -1,8 +1,6 @@
 <?php
 require_once("get_produtos.php");
 $produtos = get_produtos();
-//var_dump($produtos); // para debug
-//echo " oiiiiia";
 ?>
 
 <html lang="pt-br">

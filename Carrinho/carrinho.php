@@ -35,8 +35,6 @@ $total = 0
 
         </header>
         <main>
-            <!-- Conteúdo da página continua aqui -->
-        </main>
         <footer>
             <div class="lista-carrinho">
                 <div id="produtos">
@@ -65,5 +63,6 @@ $total = 0
                 </a>
             </div>
         </footer>
+        </main>
     </body>
 </html>
