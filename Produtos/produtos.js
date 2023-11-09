@@ -13,11 +13,6 @@ var conteudo = [
 
 window.onload = async function() {
 
-    var promise = await fetch("Produtos/teste.php", {
-        method: "GET"
-
-    });
-
     var produtos = await promise.json();
 
     for(var i = 0; i < produtos.length; i++) {

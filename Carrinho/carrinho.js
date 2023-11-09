@@ -1,7 +1,7 @@
 
 window.onload = async function() {
 
-    var promise = await fetch("Carrinho/lista.php", {
+    var promise = await fetch("Carrinho/get_produtos.php", {
 
         method: "GET"
 

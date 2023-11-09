@@ -1,3 +1,10 @@
+<?php
+require_once("get_produtos.php");
+$produtos = get_produtos();
+// print_r($produtos); // para debug
+
+?>
+
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
