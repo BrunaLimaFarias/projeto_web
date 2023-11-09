@@ -5,6 +5,6 @@ require_once("../util/db.php");
 function get_carrinho()
 {
     global $conn;
-    $query = "SELECT * FROM carrinho";
+    $query = "select * from Carrinho c inner join produtos p on c.id_produto = p.id";
     return $conn->query($query)->fetch_all(MYSQLI_ASSOC); // pega variavel conn do db.php
 }

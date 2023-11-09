@@ -1,10 +1,17 @@
 
 function gravar(){
 
-    var arquivo = document.getElementById("arquivo").file;
-    var dados = new FormData(arquivo);
+    // const titular = document.getElementById("titular").value;
+    // const preco=document.getElementById("preco").value.length;
+    
+    const arquivo = document.getElementById("arquivo").files;
+    const produtos = document.getElementById("produtos");
+    console.log(arquivo)
+    const dados = new FormData(produtos);
+    dados.append('arquivo', arquivo[0]);
 
-    fetch("Adicionar/gravar.php", {
+
+    fetch("gravar.php", {
         method: "POST",
         body: dados
     });
@@ -16,7 +23,7 @@ async function escolher(){
 
     dados.append('arquivo', arquivo[0]);
 
-    var promise = await fetch('Adicionar/escolher_img.php',{
+    var promise = await fetch('escolher_img.php',{
         method: "POST",
         body: dados
     });

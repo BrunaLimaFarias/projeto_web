@@ -10,8 +10,8 @@ $produtos = get_produtos();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="produtos.js"></script>
-    <link rel="stylesheet" href="produtos.css">
+    <script defer src="remover.js"></script>
+    <link rel="stylesheet" href="../../Produtos/produtos.css">
     <title>Página de Produtos</title>
 </head>
 
@@ -25,8 +25,8 @@ $produtos = get_produtos();
         <div class="header-right">
             <nav>
                 <ul>
-                    <li><a href="../Administrador/Login/login.html">Administrador</a></li>
-                    <li><a href="../Carrinho/carrinho.php">Carrinho</a></li>
+                    <li><a href="../Login/login.html">Administrador</a></li>
+                    <li><a href="../../Carrinho/carrinho.php">Carrinho</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,7 +46,7 @@ $produtos = get_produtos();
                             <p><?= $produto['preco'] ?></p>
                         </div>
                         <div class="adicionar_carrinho">
-                            <button onclick="comprar(<?= $produto['id'] ?>)">Adicionar ao Carrinho</button>
+                            <button onclick="remove(<?= $produto['id'] ?>)">Remover</button>
                         </div>
                     </div>
                 <?php } ?>

@@ -42,17 +42,16 @@ window.onload = async function() {
 async function comprar(id) {
     var dados = new FormData();
     dados.append("id_produto", id);
-    alert("comprando " + id); // remover
   
-    const response = await fetch("/Produtos/comprar.php", {
+    const response = await fetch("comprar.php", {
       method: "POST",
       body: dados,
     });
   
     if (response.ok) {
-      alert("deu boa!");
+      alert("Adicionado ao carrinho!");
     } else {
-      alert("deu ruim");
+      alert("Não foi possível adicionar ao carrinho!");
     }
   }
 

@@ -13,32 +13,32 @@
             <nav>
                 <ul>
                     <li><a href="../Selecionar/selecionar.html">Voltar</a></li>
-                    <li><a href="../../Produtos/produtos.html">Produtos</a></li>
+                    <li><a href="../../Produtos/produtos.php">Produtos</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
             <div class="card">
-                
                 <h2>Adicionar produto:</h2>
-
+                
                 <div class="grupo-botoes">
                     <div class="escolhe-arquivos">
                         <label for="arquivo">Escolher</label>
                         <input type="file" id="arquivo">
                     </div>
                 </div>
+                
+                <form id="produtos" name="produtos">
+                    <div class="grupo-inputs">
+                        <input type="text" name="titulo" class="titulo" placeholder="Título do produto">
+                        <input type="number" name="preco" class="preco" placeholder="Preço do produto">
+                    </div>
 
-                <div class="grupo-inputs">
-                    <input type="text" name="titulo" class="titulo" placeholder="Título do produto">
-                    <input type="number" name="preco" class="preco" placeholder="Preço do produto">
-                </div>
-
-                <div class="adicionar">
-                    <button type="button" onclick="gravar()" class="button">Adicionar</button>
-                </div>
-
+                    <div class="adicionar">
+                        <button type="button" onclick="gravar()" class="button">Adicionar</button>
+                    </div>
+                </form>   
             </div>
         </main>
     </body>
