@@ -54,4 +54,3 @@ async function comprar(id) {
       alert("Não foi possível adicionar ao carrinho!");
     }
   }
-
