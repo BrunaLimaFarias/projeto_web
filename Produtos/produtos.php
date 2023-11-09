@@ -26,7 +26,7 @@ $produtos = get_produtos();
             <nav>
                 <ul>
                     <li><a href="../Administrador/Login/login.html">Administrador</a></li>
-                    <li><a href="../Carrinho/carrinho.html">Carrinho</a></li>
+                    <li><a href="../Carrinho/carrinho.php">Carrinho</a></li>
                 </ul>
             </nav>
         </div>

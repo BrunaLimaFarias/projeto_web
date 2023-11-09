@@ -25,7 +25,7 @@ $produtos = get_carrinho();
             <div class="links">
                 <nav>
                     <ul>
-                        <li><a href="../Produtos/produtos.html">Produtos</a></li>
+                        <li><a href="../Produtos/produtos.php">Produtos</a></li>
                     </ul>    
                 </nav>
             </div>
