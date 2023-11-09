@@ -1,8 +1,8 @@
 <?php
 
 $servername = "localhost:3306";
-$username = "admin";
-$password = "admin";
+$username = "root";
+$password = "root";
 $database = "projeto_web";
 
 // conexao
