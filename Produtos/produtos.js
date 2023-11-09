@@ -18,23 +18,23 @@ window.onload = async function() {
 
     });
 
-    var dados = await promise.json();
+    var produtos = await promise.json();
 
-    for(var i = 0; i < dados.length; i++) {
+    for(var i = 0; i < produtos.length; i++) {
 
         var template =
         `<div class="card_produto">
                 <div class="img_produto" >
-                    ${dados[i].img }
+                    ${produtos[i].img }
                 </div>
                 <div class="nome_produto">
-                    <h3>${dados[i].titulo}</h3>
+                    <h3>${produtos[i].titulo}</h3>
                 </div>
                 <div class="preco_produto">
-                    <p>${dados[i].preco}</p>
+                    <p>${produtos[i].preco}</p>
                 </div>
-                <div class="adicionar_carrinho" onclick=(${dados[i].id})">
-                <button>Adicionar ao Carrinho</button>
+                <div class="adicionar_carrinho">
+                <button onclick="comprar(${produtos[i].id})">Adicionar ao Carrinho</button>
                 </div>
             </div>`;
 
@@ -44,16 +44,20 @@ window.onload = async function() {
 
 
 
-
-function comprar(id){
-
+async function comprar(id) {
     var dados = new FormData();
     dados.append("id_produto", id);
-
-    fetch("php/comprar.php", {
-        method: "POST",
-        body: dados
+    alert("comprando " + id); // remover
+  
+    const response = await fetch("/Produtos/comprar.php", {
+      method: "POST",
+      body: dados,
     });
-
-}
+  
+    if (response.ok) {
+      alert("deu boa!");
+    } else {
+      alert("deu ruim");
+    }
+  }
 

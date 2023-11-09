@@ -1,6 +1,10 @@
 <?php
     $id_produto = $_POST["id_produto"];
     $quantidade = $_POST["quantidade"];
+    
+    if (empty($quantidade)) {
+        $quantidade = "1";
+    }
 
     $con = mysqli_connect("localhost:3306", "root", "root", "projeto_web");
 
