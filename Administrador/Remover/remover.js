@@ -4,8 +4,14 @@ async function remove(id){
 
   console.log(dados);
 
-  await fetch("remove.php", {
+  const response = await fetch("remove.php", {
       method: "POST",
       body: dados
   });
+
+  if (response.ok) {
+    alert("Item removido");
+  } else {
+    alert("Não foi possível remover!");
+  }
 }

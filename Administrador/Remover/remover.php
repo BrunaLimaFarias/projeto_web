@@ -16,7 +16,7 @@ $produtos = get_produtos();
 <body>
     <header>
         <div class="header-left">
-            <img src="../Img/logo_pet.png" alt="LogoMarca">
+            <img src="http://localhost/projeto_final/projeto_web/public/img//logo_pet.png" alt="LogoMarca">
             <input type="text" placeholder="Pesquisar">
             <button>Buscar</button>
         </div>

@@ -1,10 +1,11 @@
 
 function gravar(){
 
-    // const titular = document.getElementById("titular").value;
-    // const preco=document.getElementById("preco").value.length;
-    
     const arquivo = document.getElementById("arquivo").files;
+    if (arquivo[0].type !== "image/png"){
+        alert("Somente arquivo PNG");
+    } else {
+        
     const produtos = document.getElementById("produtos");
     console.log(arquivo)
     const dados = new FormData(produtos);
@@ -15,7 +16,11 @@ function gravar(){
         method: "POST",
         body: dados
     });
+    }
+        
 }
+
+    
 
 async function escolher(){
 

@@ -105,9 +105,7 @@ main {
 .preco_produto {
     font-weight: bold;
 }
-/**/
 
-/* Estilo para o botão "Finalizar Compra" */
 .finalizar-compra {
     text-align: center;
     margin-top: 20px;
@@ -128,5 +126,5 @@ main {
 }
 
 .finalizar-compra button:hover {
-    background-color: #2980b9; /* Cor do botão "Finalizar Compra" no hover */
+    background-color: #2980b9;
 }

@@ -63,9 +63,8 @@ main {
 }
 
 .grupo-botoes {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    display: center;
+    align-items: center;
     margin-top: 10px;
 }
 

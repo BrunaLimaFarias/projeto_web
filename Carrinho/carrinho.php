@@ -18,7 +18,7 @@ $total = 0
         <header>
 
             <div class="logo">
-                <img src="../Img/logo_pet.png" alt="Logo da Empresa">
+                <img src="http://localhost/projeto_final/projeto_web/public/img/logo_pet.png" alt="Logo da Empresa">
             </div>
 
             <div class="titulo">
@@ -57,8 +57,7 @@ $total = 0
                 </div>
             </div>
             <div class="finalizar-compra">
-                <p>Total: 
-                <?= $total ?></p>
+                <p>Total: <?= $total ?></p>
                 <a href="../Compra/selecionar/selecionar.html">
                     <button>Finalizar Compra</button>
                 </a>
